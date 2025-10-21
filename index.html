@@ -1,2 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sportsbreak Post</title>
+<style>
+  :root{
+    --green:#0c6b3d; --gold:#f2b705; --char:#222; --muted:#666;
+  }
+  body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; background:#f7f7f7; color:var(--char)}
+  header{background:linear-gradient(90deg,var(--green),#0aa27b); color:white; padding:18px 24px; display:flex; align-items:center; justify-content:space-between}
+  .brand{display:flex; align-items:center; gap:12px}
+  .logo{width:46px;height:46px;background:white;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:700}
+  .satire-badge{background:var(--gold); color:var(--char); padding:6px 10px; border-radius:6px; font-weight:700; font-size:13px}
+  main{max-width:980px;margin:28px auto;padding:0 16px}
+  .hero{background:white;padding:20px;border-radius:10px;display:flex;gap:18px;align-items:center}
+  .hero h1{margin:0;font-size:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:18px}
+  .card{background:white;padding:14px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:13px}
+  footer{max-width:980px;margin:18px auto;color:var(--muted); font-size:13px;text-align:center}
+  .ticker{background:#fff3cf;color:#654500;padding:8px 12px;border-radius:8px;font-weight:600;margin-left:12px}
+  a{color:var(--green); text-decoration:none}
+  .meta{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">SBP</div>
+    <div>
+      <div style="font-weight:800">Sportsbreaks Post</div>
+      <div style="font-size:12px;color:#e7f5ee">Reliable NFL News</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="ticker">NFL</div>
+    <nav style="font-size:14px;color:white;opacity:0.95">
+      <a href="#" style="color:white;margin-right:14px">Home</a>
+      <a href="#" style="color:white;margin-right:14px">Features</a>
+      <a href="#" style="color:white">About</a>
+    </nav>
+  </div>
+</header>
 
+<main>
+  <div class="hero">
+    <div style="flex:1">
+      <h1>Welcome to Sportbreaks Post — NFL Stats, NEWS & Predictions</h1>
+      <p style="margin-top:8px;color:var(--muted)"></p>
+    </div>
+    <div style="min-width:220px;text-align:right">
+      <div style="font-weight:700">Top Ticker</div>
+      <div class="meta">Clyde Turner teaches opponents to dance — Oct 20</div>
+    </div>
+  </div>
 
+  <div class="grid" id="articles">
+    <!-- article cards -->
+    <article class="card">
+      <h3><a href="article.html?slug=clyde-two-step">BREAKING - Doug Martin dies in police custody</a></h3>
+      <p class="meta">By Dana Mirth • Oct 20, 2025</p>
+      <p>Turner’s synchronized moves are confusing defensive coordinators — teams request rehearsals.</p>
+    </article>
+
+    <article class="card">
+      <h3><a href="article.html?slug=buzz-hot-dogs">Two-time superbowl winner Brandon Graham ends retirement </a></h3>
+      <p class="meta">Pat Statson • Oct 19, 2025</p>
+      <p>Graham is coming out of a retirement to rejoin the Philadelphia Eagles, NFL Network Insiders Ian Rapoport, Mike Garafolo and Tom Pelissero reported on Tuesday. The move is expected to made official on Wednesday.</p>
+    </article>
+
+    <article class="card">
+      <h3><a href="article.html?slug=pickle-halftime-ban">BREAKING - Saquon Barkley dead at 28 in highspeed car accident</a></h3>
+      <p class="meta">Editorial Desk • Oct 18, 2025</p>
+      <p>Highspeed car accident leaves NFL running back dead</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div style="max-width:980px;margin:0 auto;padding:18px 16px">
+    <div style="font-weight:700">Sportsbreak Post</div>
+    <div style="margin-top:6px">This website is owned by the Sportsbreak Post</div>
+    <div style="margin-top:10px;color:var(--muted)">Contact: editorial [at] sportsbreak.example</div>
+  </div>
+</footer>
+</body>
+</html>
